@@ -33,7 +33,7 @@ const NavBar = ({ user }) => {
           <div>
             <div className="w3-col s3">
               <NavLink className="w3-button w3-block" to="/profile">
-                {user.name}
+                My Profile
               </NavLink>
             </div>
             <div class="w3-col s3">
