@@ -5,24 +5,19 @@ const NavBar = ({ user }) => {
   return (
     <div class="w3-top">
       <div class="w3-row w3-large w3-light-grey">
-        <div class="w3-col s3">
+        <div class="w3-col s4">
           <NavLink className="w3-button w3-block" to="/movies">
             Book
           </NavLink>
         </div>
-        <div class="w3-col s3">
-          <NavLink className="w3-button w3-block" to="/myBookings">
-            My Bookings
-          </NavLink>
-        </div>
         {!user && (
           <div>
-            <div class="w3-col s3">
+            <div class="w3-col s4">
               <NavLink className="w3-button w3-block" to="/login">
                 Login
               </NavLink>
             </div>
-            <div class="w3-col s3">
+            <div class="w3-col s4">
               <NavLink className="w3-button w3-block" to="/register">
                 Register
               </NavLink>
@@ -31,12 +26,12 @@ const NavBar = ({ user }) => {
         )}
         {user && (
           <div>
-            <div className="w3-col s3">
-              <NavLink className="w3-button w3-block" to="/profile">
-                My Profile
+            <div className="w3-col s4">
+              <NavLink className="w3-button w3-block" to="/myBookings">
+                My Bookings
               </NavLink>
             </div>
-            <div class="w3-col s3">
+            <div class="w3-col s4">
               <NavLink className="w3-button w3-block" to="/logout">
                 Logout
               </NavLink>

@@ -7,69 +7,143 @@ const data = [
   {
     name: "Swimming",
     movies: [
-      { title: "Valby", numberInStock: "13 / 8", dailyRentalRate: "19.00" },
-      { title: "Valby", numberInStock: "13 / 8", dailyRentalRate: "19.00" },
-      { title: "Valby", numberInStock: "13 / 8", dailyRentalRate: "19.00" },
-      { title: "Valby", numberInStock: "13 / 8", dailyRentalRate: "19.00" },
-      { title: "Valby", numberInStock: "13 / 8", dailyRentalRate: "19.00" },
-      { title: "Valby", numberInStock: "13 / 8", dailyRentalRate: "19.00" },
-      { title: "Valby", numberInStock: "13 / 8", dailyRentalRate: "19.00" },
-      { title: "Valby", numberInStock: "13 / 8", dailyRentalRate: "19.00" },
+      {
+        title: "Valby 13/8 kl. 19.00",
+        numberInStock: "13 / 8",
+        dailyRentalRate: "19.00",
+      },
+      {
+        title: "Valby 13/8 kl. 19.00",
+        numberInStock: "13 / 8",
+        dailyRentalRate: "19.00",
+      },
+      {
+        title: "Valby 13/8 kl. 19.00",
+        numberInStock: "13 / 8",
+        dailyRentalRate: "19.00",
+      },
+      {
+        title: "Valby 13/8 kl. 19.00",
+        numberInStock: "13 / 8",
+        dailyRentalRate: "19.00",
+      },
+      {
+        title: "Valby 13/8 kl. 19.00",
+        numberInStock: "13 / 8",
+        dailyRentalRate: "19.00",
+      },
+      {
+        title: "Valby 13/8 kl. 19.00",
+        numberInStock: "13 / 8",
+        dailyRentalRate: "19.00",
+      },
+      {
+        title: "Valby 13/8 kl. 19.00",
+        numberInStock: "13 / 8",
+        dailyRentalRate: "19.00",
+      },
+      {
+        title: "Valby 13/8 kl. 19.00",
+        numberInStock: "13 / 8",
+        dailyRentalRate: "19.00",
+      },
     ],
   },
   {
     name: "Running",
     movies: [
-      { title: "Parken", numberInStock: "13 / 9", dailyRentalRate: "18.00" },
-      { title: "Parken", numberInStock: "13 / 9", dailyRentalRate: "18.00" },
-      { title: "Parken", numberInStock: "13 / 9", dailyRentalRate: "18.00" },
-      { title: "Parken", numberInStock: "13 / 9", dailyRentalRate: "18.00" },
-      { title: "Parken", numberInStock: "13 / 9", dailyRentalRate: "18.00" },
-      { title: "Parken", numberInStock: "13 / 9", dailyRentalRate: "18.00" },
-      { title: "Parken", numberInStock: "13 / 9", dailyRentalRate: "18.00" },
-      { title: "Parken", numberInStock: "13 / 9", dailyRentalRate: "18.00" },
+      {
+        title: "Parken 14/8 kl. 19.30",
+        numberInStock: "13 / 9",
+        dailyRentalRate: "18.00",
+      },
+      {
+        title: "Parken 14/8 kl. 19.30",
+        numberInStock: "13 / 9",
+        dailyRentalRate: "18.00",
+      },
+      {
+        title: "Parken 14/8 kl. 19.30",
+        numberInStock: "13 / 9",
+        dailyRentalRate: "18.00",
+      },
+      {
+        title: "Parken 14/8 kl. 19.30",
+        numberInStock: "13 / 9",
+        dailyRentalRate: "18.00",
+      },
+      {
+        title: "Parken 14/8 kl. 19.30",
+        numberInStock: "13 / 9",
+        dailyRentalRate: "18.00",
+      },
+      {
+        title: "Parken 14/8 kl. 19.30",
+        numberInStock: "13 / 9",
+        dailyRentalRate: "18.00",
+      },
+      {
+        title: "Parken 14/8 kl. 19.30",
+        numberInStock: "13 / 9",
+        dailyRentalRate: "18.00",
+      },
+      {
+        title: "Parken 14/8 kl. 19.30",
+        numberInStock: "13 / 9",
+        dailyRentalRate: "18.00",
+      },
+      {
+        title: "Parken 14/8 kl. 19.30",
+        numberInStock: "13 / 9",
+        dailyRentalRate: "18.00",
+      },
     ],
   },
   {
     name: "Cycling",
     movies: [
       {
-        title: "Mosehuset",
+        title: "Mosehuset 15/8 kl. 18.30",
         numberInStock: "14 / 10",
         dailyRentalRate: "17.30",
       },
       {
-        title: "Mosehuset",
+        title: "Mosehuset 15/8 kl. 18.30",
         numberInStock: "14 / 10",
         dailyRentalRate: "17.30",
       },
       {
-        title: "Mosehuset",
+        title: "Mosehuset 15/8 kl. 18.30",
         numberInStock: "14 / 10",
         dailyRentalRate: "17.30",
       },
       {
-        title: "Mosehuset",
+        title: "Mosehuset 15/8 kl. 18.30",
         numberInStock: "14 / 10",
         dailyRentalRate: "17.30",
       },
       {
-        title: "Mosehuset",
+        title: "Mosehuset 15/8 kl. 18.30",
         numberInStock: "14 / 10",
         dailyRentalRate: "17.30",
       },
       {
-        title: "Mosehuset",
+        title: "Mosehuset 15/8 kl. 18.30",
         numberInStock: "14 / 10",
         dailyRentalRate: "17.30",
       },
       {
-        title: "Mosehuset",
+        title: "Mosehuset 15/8 kl. 18.30",
         numberInStock: "14 / 10",
         dailyRentalRate: "17.30",
       },
       {
-        title: "Mosehuset",
+        title: "Mosehuset 15/8 kl. 18.30",
+        numberInStock: "14 / 10",
+        dailyRentalRate: "17.30",
+      },
+      {
+        title: "Mosehuset 15/8 kl. 18.30",
         numberInStock: "14 / 10",
         dailyRentalRate: "17.30",
       },
@@ -78,14 +152,46 @@ const data = [
   {
     name: "Events",
     movies: [
-      { title: "Party", numberInStock: "15 / 10", dailyRentalRate: "18.30" },
-      { title: "Party", numberInStock: "15 / 10", dailyRentalRate: "18.30" },
-      { title: "Party", numberInStock: "15 / 10", dailyRentalRate: "18.30" },
-      { title: "Party", numberInStock: "15 / 10", dailyRentalRate: "18.30" },
-      { title: "Party", numberInStock: "15 / 10", dailyRentalRate: "18.30" },
-      { title: "Party", numberInStock: "15 / 10", dailyRentalRate: "18.30" },
-      { title: "Party", numberInStock: "15 / 10", dailyRentalRate: "18.30" },
-      { title: "Party", numberInStock: "15 / 10", dailyRentalRate: "18.30" },
+      {
+        title: "Party 16/8 kl. 18.00",
+        numberInStock: "15 / 10",
+        dailyRentalRate: "18.30",
+      },
+      {
+        title: "Party 16/8 kl. 18.00",
+        numberInStock: "15 / 10",
+        dailyRentalRate: "18.30",
+      },
+      {
+        title: "Party 16/8 kl. 18.00",
+        numberInStock: "15 / 10",
+        dailyRentalRate: "18.30",
+      },
+      {
+        title: "Party 16/8 kl. 18.00",
+        numberInStock: "15 / 10",
+        dailyRentalRate: "18.30",
+      },
+      {
+        title: "Party 16/8 kl. 18.00",
+        numberInStock: "15 / 10",
+        dailyRentalRate: "18.30",
+      },
+      {
+        title: "Party 16/8 kl. 18.00",
+        numberInStock: "15 / 10",
+        dailyRentalRate: "18.30",
+      },
+      {
+        title: "Party 16/8 kl. 18.00",
+        numberInStock: "15 / 10",
+        dailyRentalRate: "18.30",
+      },
+      {
+        title: "Party 16/8 kl. 18.00",
+        numberInStock: "15 / 10",
+        dailyRentalRate: "18.30",
+      },
     ],
   },
 ];

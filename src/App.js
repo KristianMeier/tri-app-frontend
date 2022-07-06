@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
 import Movies from "./components/movies";
 import MyBookings from "./components/myBookings";
-import MyProfile from "./components/myProfile";
 import NavBar from "./components/navBar";
 import LoginForm from "./components/loginForm";
 import RegisterForm from "./components/registerForm";
@@ -24,7 +22,6 @@ class App extends Component {
 
     return (
       <React.Fragment>
-        <ToastContainer />
         <NavBar user={user} />
         <main className="container">
           <Switch>
@@ -36,9 +33,8 @@ class App extends Component {
               render={(props) => <Movies {...props} user={this.state.user} />}
             />
             <Route path="/myBookings" component={MyBookings} />
-            <Route path="/myProfile" component={MyProfile} />
             <Redirect from="/" exact to="/movies" />
-            <Redirect to="/myProfile" />
+            <Redirect to="/myBookings" />
           </Switch>
         </main>
       </React.Fragment>
