@@ -26,14 +26,6 @@ class Movies extends Component {
     this.setState({ movies, genres });
   }
 
-  handleLike = (movie) => {
-    const movies = [...this.state.movies];
-    const index = movies.indexOf(movie);
-    movies[index] = { ...movies[index] };
-    movies[index].liked = !movies[index].liked;
-    this.setState({ movies });
-  };
-
   handlePageChange = (page) => {
     this.setState({ currentPage: page });
   };
@@ -94,7 +86,6 @@ class Movies extends Component {
           <MoviesTable
             movies={movies}
             sortColumn={sortColumn}
-            onLike={this.handleLike}
             onSort={this.handleSort}
           />
           <Pagination
