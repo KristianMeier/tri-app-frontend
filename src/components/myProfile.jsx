@@ -1,15 +1,15 @@
 import React from "react";
 
-const NotFound = () => {
+const MyProfile = () => {
   return (
     <div>
       <br />
       <br />
       <br />
       <h1>Userinfo</h1>
-      <p>Her is info about yuor practice history</p>
+      <p>Here is info about yuor practice history</p>
     </div>
   );
 };
 
-export default NotFound;
+export default MyProfile;
