@@ -1,6 +1,6 @@
 import React from "react";
 
-const Rentals = () => {
+const MyBookings = () => {
   return (
     <div>
       <br />
@@ -12,4 +12,4 @@ const Rentals = () => {
   );
 };
 
-export default Rentals;
+export default MyBookings;

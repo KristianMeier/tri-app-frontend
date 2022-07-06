@@ -11,7 +11,7 @@ const NavBar = ({ user }) => {
           </NavLink>
         </div>
         <div class="w3-col s3">
-          <NavLink className="w3-button w3-block" to="/rentals">
+          <NavLink className="w3-button w3-block" to="/myBookings">
             My Bookings
           </NavLink>
         </div>
