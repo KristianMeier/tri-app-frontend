@@ -15,44 +15,36 @@ const NavBar = ({ user }) => {
             My Bookings
           </NavLink>
         </div>
-        <div class="w3-col s3">
-          <a href="#about" class="w3-button w3-block">
-            About
-          </a>
-        </div>
-        <div class="w3-col s3">
-          <a href="#contact" class="w3-button w3-block">
-            Contact
-          </a>
-        </div>
+        {!user && (
+          <div>
+            <div class="w3-col s3">
+              <NavLink className="w3-button w3-block" to="/login">
+                Login
+              </NavLink>
+            </div>
+            <div class="w3-col s3">
+              <NavLink className="w3-button w3-block" to="/register">
+                Register
+              </NavLink>
+            </div>
+          </div>
+        )}
+        {user && (
+          <div>
+            <div className="w3-col s3">
+              <NavLink className="w3-button w3-block" to="/profile">
+                {user.name}
+              </NavLink>
+            </div>
+            <div class="w3-col s3">
+              <NavLink className="w3-button w3-block" to="/logout">
+                Logout
+              </NavLink>
+            </div>
+          </div>
+        )}
       </div>
     </div>
-
-    //
-    //
-    //       {!user && (
-    //         <React.Fragment>
-    //           <NavLink className="nav-item nav-link" to="/login">
-    //             Login
-    //           </NavLink>
-    //           <NavLink className="nav-item nav-link" to="/register">
-    //             Register
-    //           </NavLink>
-    //         </React.Fragment>
-    //       )}
-    //       {user && (
-    //         <React.Fragment>
-    //           <NavLink className="nav-item nav-link" to="/profile">
-    //             {user.name}
-    //           </NavLink>
-    //           <NavLink className="nav-item nav-link" to="/logout">
-    //             Logout
-    //           </NavLink>
-    //         </React.Fragment>
-    //       )}
-    //     </div>
-    //   </div>
-    // </nav>
   );
 };
 

@@ -3,8 +3,11 @@ import React from "react";
 const NotFound = () => {
   return (
     <div>
-      <h1>Tri-club</h1>
-      <p>Here is your bookings</p>
+      <br />
+      <br />
+      <br />
+      <h1>Userinfo</h1>
+      <p>Her is info about yuor practice history</p>
     </div>
   );
 };

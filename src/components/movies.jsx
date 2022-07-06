@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import MoviesTable from "./moviesTable";
 import Pagination from "./common/pagination";

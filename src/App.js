@@ -3,7 +3,6 @@ import { Route, Redirect, Switch } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import Movies from "./components/movies";
 import MovieForm from "./components/movieForm";
-import Customers from "./components/customers";
 import Rentals from "./components/rentals";
 import NotFound from "./components/notFound";
 import NavBar from "./components/navBar";
@@ -38,9 +37,8 @@ class App extends Component {
             <ProtectedRoute path="/movies/:id" component={MovieForm} />
             <Route
               path="/movies"
-              render={props => <Movies {...props} user={this.state.user} />}
+              render={(props) => <Movies {...props} user={this.state.user} />}
             />
-            <Route path="/customers" component={Customers} />
             <Route path="/rentals" component={Rentals} />
             <Route path="/not-found" component={NotFound} />
             <Redirect from="/" exact to="/movies" />
