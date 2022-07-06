@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import auth from "../services/authService";
-import { Link } from "react-router-dom";
 import Table from "./common/table";
 import Like from "./common/like";
 
@@ -9,32 +8,16 @@ class MoviesTable extends Component {
     {
       path: "title",
       label: "Location",
-      content: (movie) => (
-        <Link to={`/movies/${movie._id}`}>{movie.title}</Link>
-      ),
     },
     { path: "genre.name", label: "Disciplin" },
-    { path: "numberInStock", label: "Date" },
-    { path: "dailyRentalRate", label: "Time" },
     {
       key: "like",
+      label: "Sign up",
       content: (movie) => (
         <Like liked={movie.liked} onClick={() => this.props.onLike(movie)} />
       ),
     },
   ];
-
-  deleteColumn = {
-    key: "delete",
-    content: (movie) => (
-      <button
-        onClick={() => this.props.onDelete(movie)}
-        className="btn btn-danger btn-sm"
-      >
-        Delete
-      </button>
-    ),
-  };
 
   constructor() {
     super();
