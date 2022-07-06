@@ -14,7 +14,7 @@ class Movies extends Component {
     movies: [],
     genres: [],
     currentPage: 1,
-    pageSize: 4,
+    pageSize: 11,
     searchQuery: "",
     selectedGenre: null,
     sortColumn: { path: "title", order: "asc" },
@@ -104,16 +104,10 @@ class Movies extends Component {
     return (
       <div className="row">
         <div className="col">
-          {user && (
-            <Link
-              to="/movies/new"
-              className="btn btn-primary"
-              style={{ marginBottom: 20 }}
-            >
-              New Movie
-            </Link>
-          )}
-          <p>Showing {totalCount} movies in the database.</p>
+          <br />
+          <br />
+          <br />
+          <h2>Book a practice</h2>
           <SearchBox value={searchQuery} onChange={this.handleSearch} />
           <MoviesTable
             movies={movies}

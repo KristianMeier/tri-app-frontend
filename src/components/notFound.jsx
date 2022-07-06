@@ -4,7 +4,7 @@ const NotFound = () => {
   return (
     <div>
       <h1>Tri-club</h1>
-      <p>Her er dine bookinger</p>
+      <p>Here is your bookings</p>
     </div>
   );
 };
