@@ -1,3 +1,11 @@
+## Run it
+
+1. Terminal: sudo mongod --dbpath=/Users/kristianmeier/data/db
+2. node index.js
+3. In backend/config/default.json - Choose if Authentication should be enabled.
+4. Check link in browser: http://localhost:3900/api/genres
+5. Check and manipulate data in Mongodb atlas
+
 ## Introduction
 
 This project is the backend of Vidly, an imaginary video rental app. I've used Vidly as an example in several of my online programming courses, such as:
