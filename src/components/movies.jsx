@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { toast } from "react-toastify";
 import MoviesTable from "./moviesTable";
 import Pagination from "./common/pagination";
-import { getMovies, deleteMovie } from "../services/movieService";
+import { getMovies } from "../services/movieService";
 import { getGenres } from "../services/genreService";
 import { paginate } from "../utils/paginate";
 import _ from "lodash";
@@ -26,21 +25,6 @@ class Movies extends Component {
     const { data: movies } = await getMovies();
     this.setState({ movies, genres });
   }
-
-  handleDelete = async (movie) => {
-    const originalMovies = this.state.movies;
-    const movies = originalMovies.filter((m) => m._id !== movie._id);
-    this.setState({ movies });
-
-    try {
-      await deleteMovie(movie._id);
-    } catch (ex) {
-      if (ex.response && ex.response.status === 404)
-        toast.error("This movie has already been deleted.");
-
-      this.setState({ movies: originalMovies });
-    }
-  };
 
   handleLike = (movie) => {
     const movies = [...this.state.movies];
@@ -111,7 +95,6 @@ class Movies extends Component {
             movies={movies}
             sortColumn={sortColumn}
             onLike={this.handleLike}
-            onDelete={this.handleDelete}
             onSort={this.handleSort}
           />
           <Pagination
