@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
-import Movies from "./components/movies";
+import Practices from "./components/practices";
 import MyBookings from "./components/myBookings";
 import NavBar from "./components/navBar";
 import LoginForm from "./components/loginForm";
@@ -30,7 +30,9 @@ class App extends Component {
             <Route path="/logout" component={Logout} />
             <Route
               path="/movies"
-              render={(props) => <Movies {...props} user={this.state.user} />}
+              render={(props) => (
+                <Practices {...props} user={this.state.user} />
+              )}
             />
             <Route path="/myBookings" component={MyBookings} />
             <Redirect from="/" exact to="/movies" />

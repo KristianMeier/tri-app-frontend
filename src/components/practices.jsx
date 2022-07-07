@@ -3,11 +3,11 @@ import MoviesTable from "./moviesTable";
 import Pagination from "./common/pagination";
 import { getMovies } from "../services/movieService";
 import { getGenres } from "../services/genreService";
-import { paginate } from "../utils/paginate";
+import { paginate } from "./common/pagination";
 import _ from "lodash";
 import SearchBox from "./searchBox";
 
-class Movies extends Component {
+class Practices extends Component {
   state = {
     movies: [],
     genres: [],
@@ -100,4 +100,4 @@ class Movies extends Component {
   }
 }
 
-export default Movies;
+export default Practices;

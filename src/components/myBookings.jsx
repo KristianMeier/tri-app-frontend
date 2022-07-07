@@ -3,7 +3,7 @@ import MoviesTable from "./moviesTable";
 import Pagination from "./common/pagination";
 import { getMovies } from "../services/movieService";
 import { getGenres } from "../services/genreService";
-import { paginate } from "../utils/paginate";
+import { paginate } from "./common/pagination";
 import _ from "lodash";
 
 class MyBookings extends Component {
