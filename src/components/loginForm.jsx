@@ -7,16 +7,12 @@ import auth from "../services/authService";
 class LoginForm extends Form {
   state = {
     data: { username: "", password: "" },
-    errors: {}
+    errors: {},
   };
 
   schema = {
-    username: Joi.string()
-      .required()
-      .label("Username"),
-    password: Joi.string()
-      .required()
-      .label("Password")
+    username: Joi.string().required().label("Username"),
+    password: Joi.string().required().label("Password"),
   };
 
   doSubmit = async () => {
@@ -40,12 +36,16 @@ class LoginForm extends Form {
 
     return (
       <div>
+        <br />
+        <br />
+        <br />
         <h1>Login</h1>
         <form onSubmit={this.handleSubmit}>
           {this.renderInput("username", "Username")}
           {this.renderInput("password", "Password", "password")}
           {this.renderButton("Login")}
         </form>
+        <br />
       </div>
     );
   }

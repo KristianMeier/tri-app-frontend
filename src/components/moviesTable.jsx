@@ -13,9 +13,7 @@ class MoviesTable extends Component {
     {
       key: "like",
       label: "Sign up",
-      content: (movie) => (
-        <Like liked={movie.liked} onClick={() => this.props.onLike(movie)} />
-      ),
+      content: () => <Like />,
     },
   ];
 

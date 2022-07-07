@@ -4,6 +4,7 @@ const Like = (props) => {
   return (
     <button
       type="button"
+      id="pagination-icons"
       class="btn btn-outline-secondary btn-sm"
       onClick={props.onClick}
       style={{ cursor: "pointer" }}
