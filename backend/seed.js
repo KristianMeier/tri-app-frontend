@@ -1,5 +1,5 @@
-const { Genre } = require("./models/genre");
-const { Movie } = require("./models/movie");
+const { Disciplines } = require("./models/genre");
+const { Practices } = require("./models/movie");
 const mongoose = require("mongoose");
 const config = require("config");
 
@@ -99,18 +99,18 @@ const data = [
 async function seed() {
   await mongoose.connect(config.get("db"));
 
-  await Movie.deleteMany({});
-  await Genre.deleteMany({});
+  await Practices.deleteMany({});
+  await Disciplines.deleteMany({});
 
   for (let discipline of data) {
-    const { _id: disciplinId } = await new Genre({
+    const { _id: disciplinId } = await new Disciplines({
       name: discipline.name,
     }).save();
     const movies = discipline.movies.map((movie) => ({
       ...movie,
       discipline: { _id: disciplinId, name: discipline.name },
     }));
-    await Movie.insertMany(movies);
+    await Practices.insertMany(movies);
   }
 
   mongoose.disconnect();

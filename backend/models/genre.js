@@ -10,9 +10,9 @@ const genreSchema = new mongoose.Schema({
   },
 });
 
-const Genre = mongoose.model("Genre", genreSchema);
+const Disciplines = mongoose.model("Disciplines", genreSchema);
 
-function validateGenre(discipline) {
+function validateDisciplines(discipline) {
   const schema = {
     name: Joi.string().min(5).max(50).required(),
   };
@@ -21,5 +21,5 @@ function validateGenre(discipline) {
 }
 
 exports.genreSchema = genreSchema;
-exports.Genre = Genre;
-exports.validate = validateGenre;
+exports.Disciplines = Disciplines;
+exports.validate = validateDisciplines;

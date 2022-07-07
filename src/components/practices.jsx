@@ -14,13 +14,13 @@ class Practices extends Component {
     currentPage: 1,
     pageSize: 20,
     searchQuery: "",
-    selectedGenre: null,
+    selectedDisciplines: null,
     sortColumn: { path: "practices", order: "asc" },
   };
 
   async componentDidMount() {
     const { data } = await getDisciplines();
-    const disciplines = [{ _id: "", name: "All Genres" }, ...data];
+    const disciplines = [{ _id: "", name: "All Discipliness" }, ...data];
 
     const { data: practices } = await getPractices();
     this.setState({ practices, disciplines });
@@ -32,14 +32,18 @@ class Practices extends Component {
 
   handleDisciplinesSelect = (discipline) => {
     this.setState({
-      selectedGenre: discipline,
+      selectedDisciplines: discipline,
       searchQuery: "",
       currentPage: 1,
     });
   };
 
   handleSearch = (query) => {
-    this.setState({ searchQuery: query, selectedGenre: null, currentPage: 1 });
+    this.setState({
+      searchQuery: query,
+      selectedDisciplines: null,
+      currentPage: 1,
+    });
   };
 
   handleSort = (sortColumn) => {
@@ -51,7 +55,7 @@ class Practices extends Component {
       pageSize,
       currentPage,
       sortColumn,
-      selectedGenre,
+      selectedDisciplines,
       searchQuery,
       practices: allPactices,
     } = this.state;
@@ -61,9 +65,9 @@ class Practices extends Component {
       filtered = allPactices.filter((m) =>
         m.practices.toLowerCase().startsWith(searchQuery.toLowerCase())
       );
-    else if (selectedGenre && selectedGenre._id)
+    else if (selectedDisciplines && selectedDisciplines._id)
       filtered = allPactices.filter(
-        (m) => m.discipline._id === selectedGenre._id
+        (m) => m.discipline._id === selectedDisciplines._id
       );
 
     const sorted = _.orderBy(filtered, [sortColumn.path], [sortColumn.order]);
