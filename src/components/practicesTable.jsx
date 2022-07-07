@@ -30,10 +30,6 @@ class PracticesTable extends Component {
     },
   ];
 
-  constructor() {
-    super();
-  }
-
   render() {
     const { practices, onSort, sortColumn } = this.props;
 

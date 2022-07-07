@@ -1,9 +1,6 @@
 import React from "react";
-import Button from "./common/button";
 
 const AboutTheApp = () => {
-  const buttonText = "Sign Off";
-
   return (
     <div className="row">
       <div className="col">
