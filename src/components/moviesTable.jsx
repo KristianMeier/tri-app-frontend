@@ -1,17 +1,13 @@
 import React, { Component } from "react";
 import auth from "../services/authService";
 import Table from "./common/table";
+import Button from "./common/button";
 
-const Like = () => {
+const Spots = () => {
   return (
-    <button
-      type="button"
-      id="pagination-icons"
-      class="btn btn-outline-secondary btn-sm"
-      style={{ cursor: "pointer" }}
-    >
-      Sign Up
-    </button>
+    <div>
+      <p>3/16</p>
+    </div>
   );
 };
 
@@ -23,9 +19,14 @@ class MoviesTable extends Component {
     },
     { path: "genre.name", label: "Disciplin" },
     {
+      key: "hej",
+      label: "Spots",
+      content: () => <Spots />,
+    },
+    {
       key: "like",
       label: "Sign up",
-      content: () => Like(),
+      content: () => <Button text={"Sign Up"} />,
     },
   ];
 
