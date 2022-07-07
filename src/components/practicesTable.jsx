@@ -17,8 +17,8 @@ class PracticesTable extends Component {
       path: "practices",
       label: "Location",
     },
-    //genre laves i seed i bunden, kan ikke let ændres.
-    { path: "genre.name", label: "Disciplin" },
+    //discipline laves i seed i bunden, kan ikke let ændres.
+    { path: "discipline.name", label: "Disciplin" },
     {
       key: "hej",
       label: "Spots",

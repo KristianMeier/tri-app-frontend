@@ -102,11 +102,13 @@ async function seed() {
   await Movie.deleteMany({});
   await Genre.deleteMany({});
 
-  for (let genre of data) {
-    const { _id: disciplinId } = await new Genre({ name: genre.name }).save();
-    const movies = genre.movies.map((movie) => ({
+  for (let discipline of data) {
+    const { _id: disciplinId } = await new Genre({
+      name: discipline.name,
+    }).save();
+    const movies = discipline.movies.map((movie) => ({
       ...movie,
-      genre: { _id: disciplinId, name: genre.name },
+      discipline: { _id: disciplinId, name: discipline.name },
     }));
     await Movie.insertMany(movies);
   }
