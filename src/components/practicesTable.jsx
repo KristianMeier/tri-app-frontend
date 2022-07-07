@@ -17,7 +17,7 @@ class PracticesTable extends Component {
       path: "title",
       label: "Location",
     },
-    { path: "genre.name", label: "Disciplin" },
+    { path: "discipline.name", label: "Disciplin" },
     {
       key: "hej",
       label: "Spots",

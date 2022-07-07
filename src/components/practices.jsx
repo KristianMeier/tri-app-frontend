@@ -10,7 +10,7 @@ import SearchBox from "./searchBox";
 class Practices extends Component {
   state = {
     movies: [],
-    genres: [],
+    disciplines: [],
     currentPage: 1,
     pageSize: 20,
     searchQuery: "",
@@ -20,18 +20,22 @@ class Practices extends Component {
 
   async componentDidMount() {
     const { data } = await getDisciplines();
-    const genres = [{ _id: "", name: "All Genres" }, ...data];
+    const disciplines = [{ _id: "", name: "All Genres" }, ...data];
 
     const { data: movies } = await getPractices();
-    this.setState({ movies, genres });
+    this.setState({ movies, disciplines });
   }
 
   handlePageChange = (page) => {
     this.setState({ currentPage: page });
   };
 
-  handleDisciplinesSelect = (genre) => {
-    this.setState({ selectedGenre: genre, searchQuery: "", currentPage: 1 });
+  handleDisciplinesSelect = (discipline) => {
+    this.setState({
+      selectedGenre: discipline,
+      searchQuery: "",
+      currentPage: 1,
+    });
   };
 
   handleSearch = (query) => {
@@ -58,7 +62,9 @@ class Practices extends Component {
         m.title.toLowerCase().startsWith(searchQuery.toLowerCase())
       );
     else if (selectedGenre && selectedGenre._id)
-      filtered = allMovies.filter((m) => m.genre._id === selectedGenre._id);
+      filtered = allMovies.filter(
+        (m) => m.discipline._id === selectedGenre._id
+      );
 
     const sorted = _.orderBy(filtered, [sortColumn.path], [sortColumn.order]);
 
