@@ -3,39 +3,22 @@ import { Route, Redirect, Switch } from "react-router-dom";
 import Practices from "./components/practices";
 import MyBookings from "./components/myBookings";
 import NavBar from "./components/navBar";
-import LoginForm from "./components/loginForm";
-import RegisterForm from "./components/registerForm";
-import Logout from "./components/logout";
-import auth from "./services/authService";
 import Footer from "./components/footer";
+import AboutTheApp from "./components/aboutTheApp";
 
 class App extends Component {
   state = {};
 
-  componentDidMount() {
-    const user = auth.getCurrentUser();
-    this.setState({ user });
-  }
-
   render() {
-    const { user } = this.state;
-
     return (
       <React.Fragment>
-        <NavBar user={user} />
+        <NavBar />
         <main className="container">
           <Switch>
-            <Route path="/register" component={RegisterForm} />
-            <Route path="/login" component={LoginForm} />
-            <Route path="/logout" component={Logout} />
-            <Route
-              path="/practices"
-              render={(props) => (
-                <Practices {...props} user={this.state.user} />
-              )}
-            />
+            <Route path="/about-the-app" component={AboutTheApp} />
+            <Route path="/practices" component={Practices} />
             <Route path="/myBookings" component={MyBookings} />
-            <Redirect from="/" exact to="/practices" />
+            <Redirect from="/" exact to="/about-the-app" />
             <Redirect to="/myBookings" />
           </Switch>
         </main>

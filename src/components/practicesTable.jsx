@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import auth from "../services/authService";
 import Table from "./common/table";
 import Button from "./common/button";
 
@@ -33,8 +32,6 @@ class PracticesTable extends Component {
 
   constructor() {
     super();
-    const user = auth.getCurrentUser();
-    if (user && user.isAdmin) this.columns.push(this.deleteColumn);
   }
 
   render() {

@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./assets/index.css";
 import "./assets/w3.css";
 import App from "./App";
-
 import "font-awesome/css/font-awesome.css";
 
 ReactDOM.render(

@@ -6,38 +6,20 @@ const NavBar = ({ user }) => {
     <div class="w3-top">
       <div class="w3-row w3-large w3-light-grey">
         <div class="w3-col s4">
+          <NavLink className="w3-button w3-block" to="/about-the-app">
+            About the App
+          </NavLink>
+        </div>
+        <div class="w3-col s4">
           <NavLink className="w3-button w3-block" to="/practices">
             Book
           </NavLink>
         </div>
-        {!user && (
-          <div>
-            <div class="w3-col s4">
-              <NavLink className="w3-button w3-block" to="/login">
-                Login
-              </NavLink>
-            </div>
-            <div class="w3-col s4">
-              <NavLink className="w3-button w3-block" to="/register">
-                Register
-              </NavLink>
-            </div>
-          </div>
-        )}
-        {user && (
-          <div>
-            <div className="w3-col s4">
-              <NavLink className="w3-button w3-block" to="/myBookings">
-                My Bookings
-              </NavLink>
-            </div>
-            <div class="w3-col s4">
-              <NavLink className="w3-button w3-block" to="/logout">
-                Logout
-              </NavLink>
-            </div>
-          </div>
-        )}
+        <div className="w3-col s4">
+          <NavLink className="w3-button w3-block" to="/myBookings">
+            My Bookings
+          </NavLink>
+        </div>
       </div>
     </div>
   );
