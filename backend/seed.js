@@ -10,17 +10,17 @@ const data = [
       {
         practices: "Valby 13/8 kl. 19.00",
         spotsOpen: "13 / 8",
-        dailyRentalRate: "19.00",
+        hasSigned: "19.00",
       },
       {
         practices: "Valby 13/8 kl. 19.00",
         spotsOpen: "13 / 8",
-        dailyRentalRate: "19.00",
+        hasSigned: "19.00",
       },
       {
         practices: "Valby 13/8 kl. 19.00",
         spotsOpen: "13 / 8",
-        dailyRentalRate: "19.00",
+        hasSigned: "19.00",
       },
     ],
   },
@@ -30,22 +30,22 @@ const data = [
       {
         practices: "Parken 14/8 kl. 19.30",
         spotsOpen: "13 / 9",
-        dailyRentalRate: "18.00",
+        hasSigned: "18.00",
       },
       {
         practices: "Parken 14/8 kl. 19.30",
         spotsOpen: "13 / 9",
-        dailyRentalRate: "18.00",
+        hasSigned: "18.00",
       },
       {
         practices: "Parken 14/8 kl. 19.30",
         spotsOpen: "13 / 9",
-        dailyRentalRate: "18.00",
+        hasSigned: "18.00",
       },
       {
         practices: "Parken 14/8 kl. 19.30",
         spotsOpen: "13 / 9",
-        dailyRentalRate: "18.00",
+        hasSigned: "18.00",
       },
     ],
   },
@@ -55,22 +55,22 @@ const data = [
       {
         practices: "Mosehuset 15/8 kl. 18.30",
         spotsOpen: "14 / 10",
-        dailyRentalRate: "17.30",
+        hasSigned: "17.30",
       },
       {
         practices: "Mosehuset 15/8 kl. 18.30",
         spotsOpen: "14 / 10",
-        dailyRentalRate: "17.30",
+        hasSigned: "17.30",
       },
       {
         practices: "Mosehuset 15/8 kl. 18.30",
         spotsOpen: "14 / 10",
-        dailyRentalRate: "17.30",
+        hasSigned: "17.30",
       },
       {
         practices: "Mosehuset 15/8 kl. 18.30",
         spotsOpen: "14 / 10",
-        dailyRentalRate: "17.30",
+        hasSigned: "17.30",
       },
     ],
   },
@@ -80,17 +80,17 @@ const data = [
       {
         practices: "Party 16/8 kl. 18.00",
         spotsOpen: "15 / 10",
-        dailyRentalRate: "18.30",
+        hasSigned: "18.30",
       },
       {
         practices: "Party 16/8 kl. 18.00",
         spotsOpen: "15 / 10",
-        dailyRentalRate: "18.30",
+        hasSigned: "18.30",
       },
       {
         practices: "Party 16/8 kl. 18.00",
         spotsOpen: "15 / 10",
-        dailyRentalRate: "18.30",
+        hasSigned: "18.30",
       },
     ],
   },
@@ -103,10 +103,10 @@ async function seed() {
   await Genre.deleteMany({});
 
   for (let genre of data) {
-    const { _id: genreId } = await new Genre({ name: genre.name }).save();
+    const { _id: disciplinId } = await new Genre({ name: genre.name }).save();
     const movies = genre.movies.map((movie) => ({
       ...movie,
-      genre: { _id: genreId, name: genre.name },
+      genre: { _id: disciplinId, name: genre.name },
     }));
     await Movie.insertMany(movies);
   }
