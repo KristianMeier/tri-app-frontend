@@ -7,7 +7,7 @@ import LoginForm from "./components/loginForm";
 import RegisterForm from "./components/registerForm";
 import Logout from "./components/logout";
 import auth from "./services/authService";
-import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/footer";
 
 class App extends Component {
   state = {};
@@ -37,6 +37,7 @@ class App extends Component {
             <Redirect to="/myBookings" />
           </Switch>
         </main>
+        <Footer />
       </React.Fragment>
     );
   }

@@ -1,5 +1,6 @@
 ## Bagsiden
 
+0. cd backend
 1. npm i
 2. sudo mongod --dbpath=/Users/kristianmeier/data/db
 3. node seed.js

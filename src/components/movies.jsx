@@ -81,7 +81,7 @@ class Movies extends Component {
           <br />
           <br />
           <br />
-          <h2>Book a practice</h2>
+          <h2 id="link-for-footer">Book a practice</h2>
           <SearchBox value={searchQuery} onChange={this.handleSearch} />
           <MoviesTable
             movies={movies}
