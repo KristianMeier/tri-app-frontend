@@ -1,7 +1,19 @@
 import React, { Component } from "react";
 import auth from "../services/authService";
 import Table from "./common/table";
-import Like from "./common/like";
+
+const Like = () => {
+  return (
+    <button
+      type="button"
+      id="pagination-icons"
+      class="btn btn-outline-secondary btn-sm"
+      style={{ cursor: "pointer" }}
+    >
+      Sign Up
+    </button>
+  );
+};
 
 class MoviesTable extends Component {
   columns = [
@@ -13,7 +25,7 @@ class MoviesTable extends Component {
     {
       key: "like",
       label: "Sign up",
-      content: () => <Like />,
+      content: () => Like(),
     },
   ];
 
