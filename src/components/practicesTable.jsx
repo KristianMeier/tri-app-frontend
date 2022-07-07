@@ -14,10 +14,11 @@ const Spots = () => {
 class PracticesTable extends Component {
   columns = [
     {
-      path: "title",
+      path: "practices",
       label: "Location",
     },
-    { path: "discipline.name", label: "Disciplin" },
+    //genre laves i seed i bunden, kan ikke let ændres.
+    { path: "genre.name", label: "Disciplin" },
     {
       key: "hej",
       label: "Spots",

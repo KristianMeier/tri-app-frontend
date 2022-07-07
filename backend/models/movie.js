@@ -5,7 +5,7 @@ const { genreSchema } = require("./genre");
 const Movie = mongoose.model(
   "Movies",
   new mongoose.Schema({
-    title: {
+    practices: {
       type: String,
       required: true,
       trim: true,
@@ -33,7 +33,7 @@ const Movie = mongoose.model(
 
 function validateMovie(movie) {
   const schema = {
-    title: Joi.string().min(5).max(50).required(),
+    practices: Joi.string().min(5).max(50).required(),
     genreId: Joi.objectId().required(),
     spotsOpen: Joi.string().min(0).required(),
     dailyRentalRate: Joi.string().min(0).required(),

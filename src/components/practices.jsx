@@ -15,7 +15,7 @@ class Practices extends Component {
     pageSize: 20,
     searchQuery: "",
     selectedGenre: null,
-    sortColumn: { path: "title", order: "asc" },
+    sortColumn: { path: "practices", order: "asc" },
   };
 
   async componentDidMount() {
@@ -59,7 +59,7 @@ class Practices extends Component {
     let filtered = allPactices;
     if (searchQuery)
       filtered = allPactices.filter((m) =>
-        m.title.toLowerCase().startsWith(searchQuery.toLowerCase())
+        m.practices.toLowerCase().startsWith(searchQuery.toLowerCase())
       );
     else if (selectedGenre && selectedGenre._id)
       filtered = allPactices.filter(
