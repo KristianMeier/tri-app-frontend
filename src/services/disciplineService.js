@@ -1,6 +1,6 @@
 import http from "./httpService";
 import { apiUrl } from "../assets/config.json";
 
-export function getGenres() {
+export function getDisciplines() {
   return http.get(apiUrl + "/genres");
 }

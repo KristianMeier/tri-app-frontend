@@ -3,6 +3,6 @@ import { apiUrl } from "../assets/config.json";
 
 const apiEndpoint = apiUrl + "/movies";
 
-export function getMovies() {
+export function getPractices() {
   return http.get(apiEndpoint);
 }

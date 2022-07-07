@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import MoviesTable from "./practicesTable";
+import PracticesTable from "./practicesTable";
 import Pagination from "./common/pagination";
-import { getMovies } from "../services/practiceService";
-import { getGenres } from "../services/disciplineService";
+import { getPractices } from "../services/practiceService";
+import { getDisciplines } from "../services/disciplineService";
 import { paginate } from "./common/pagination";
 import _ from "lodash";
 import SearchBox from "./searchBox";
@@ -19,10 +19,10 @@ class Practices extends Component {
   };
 
   async componentDidMount() {
-    const { data } = await getGenres();
+    const { data } = await getDisciplines();
     const genres = [{ _id: "", name: "All Genres" }, ...data];
 
-    const { data: movies } = await getMovies();
+    const { data: movies } = await getPractices();
     this.setState({ movies, genres });
   }
 
@@ -30,7 +30,7 @@ class Practices extends Component {
     this.setState({ currentPage: page });
   };
 
-  handleGenreSelect = (genre) => {
+  handleDisciplinesSelect = (genre) => {
     this.setState({ selectedGenre: genre, searchQuery: "", currentPage: 1 });
   };
 
@@ -83,7 +83,7 @@ class Practices extends Component {
           <br />
           <h2 id="link-for-footer">Book a practice</h2>
           <SearchBox value={searchQuery} onChange={this.handleSearch} />
-          <MoviesTable
+          <PracticesTable
             movies={movies}
             sortColumn={sortColumn}
             onSort={this.handleSort}

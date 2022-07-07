@@ -11,7 +11,7 @@ const Spots = () => {
   );
 };
 
-class MoviesTable extends Component {
+class PracticesTable extends Component {
   columns = [
     {
       path: "title",
@@ -50,4 +50,4 @@ class MoviesTable extends Component {
   }
 }
 
-export default MoviesTable;
+export default PracticesTable;
