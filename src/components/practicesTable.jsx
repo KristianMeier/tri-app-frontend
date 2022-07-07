@@ -37,12 +37,12 @@ class PracticesTable extends Component {
   }
 
   render() {
-    const { movies, onSort, sortColumn } = this.props;
+    const { practices, onSort, sortColumn } = this.props;
 
     return (
       <Table
         columns={this.columns}
-        data={movies}
+        data={practices}
         sortColumn={sortColumn}
         onSort={onSort}
       />

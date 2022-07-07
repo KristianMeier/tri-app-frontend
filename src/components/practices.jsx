@@ -9,7 +9,7 @@ import SearchBox from "./searchBox";
 
 class Practices extends Component {
   state = {
-    movies: [],
+    practices: [],
     disciplines: [],
     currentPage: 1,
     pageSize: 20,
@@ -22,8 +22,8 @@ class Practices extends Component {
     const { data } = await getDisciplines();
     const disciplines = [{ _id: "", name: "All Genres" }, ...data];
 
-    const { data: movies } = await getPractices();
-    this.setState({ movies, disciplines });
+    const { data: practices } = await getPractices();
+    this.setState({ practices, disciplines });
   }
 
   handlePageChange = (page) => {
@@ -53,7 +53,7 @@ class Practices extends Component {
       sortColumn,
       selectedGenre,
       searchQuery,
-      movies: allMovies,
+      practices: allMovies,
     } = this.state;
 
     let filtered = allMovies;
@@ -68,18 +68,18 @@ class Practices extends Component {
 
     const sorted = _.orderBy(filtered, [sortColumn.path], [sortColumn.order]);
 
-    const movies = paginate(sorted, currentPage, pageSize);
+    const practices = paginate(sorted, currentPage, pageSize);
 
-    return { totalCount: filtered.length, data: movies };
+    return { totalCount: filtered.length, data: practices };
   };
 
   render() {
-    const { length: count } = this.state.movies;
+    const { length: count } = this.state.practices;
     const { pageSize, currentPage, sortColumn, searchQuery } = this.state;
 
-    if (count === 0) return <p>There are no movies in the database.</p>;
+    if (count === 0) return <p>There are no practices in the database.</p>;
 
-    const { totalCount, data: movies } = this.getPagedData();
+    const { totalCount, data: practices } = this.getPagedData();
 
     return (
       <div className="row">
@@ -90,7 +90,7 @@ class Practices extends Component {
           <h2 id="link-for-footer">Book a practice</h2>
           <SearchBox value={searchQuery} onChange={this.handleSearch} />
           <PracticesTable
-            movies={movies}
+            practices={practices}
             sortColumn={sortColumn}
             onSort={this.handleSort}
           />

@@ -29,13 +29,13 @@ class App extends Component {
             <Route path="/login" component={LoginForm} />
             <Route path="/logout" component={Logout} />
             <Route
-              path="/movies"
+              path="/practices"
               render={(props) => (
                 <Practices {...props} user={this.state.user} />
               )}
             />
             <Route path="/myBookings" component={MyBookings} />
-            <Redirect from="/" exact to="/movies" />
+            <Redirect from="/" exact to="/practices" />
             <Redirect to="/myBookings" />
           </Switch>
         </main>
