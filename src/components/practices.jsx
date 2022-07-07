@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import MoviesTable from "./moviesTable";
+import MoviesTable from "./practicesTable";
 import Pagination from "./common/pagination";
 import { getMovies } from "../services/practiceService";
-import { getGenres } from "../services/genreService";
+import { getGenres } from "../services/disciplineService";
 import { paginate } from "./common/pagination";
 import _ from "lodash";
 import SearchBox from "./searchBox";
