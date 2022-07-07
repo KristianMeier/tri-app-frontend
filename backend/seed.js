@@ -9,17 +9,17 @@ const data = [
     movies: [
       {
         title: "Valby 13/8 kl. 19.00",
-        numberInStock: "13 / 8",
+        spotsOpen: "13 / 8",
         dailyRentalRate: "19.00",
       },
       {
         title: "Valby 13/8 kl. 19.00",
-        numberInStock: "13 / 8",
+        spotsOpen: "13 / 8",
         dailyRentalRate: "19.00",
       },
       {
         title: "Valby 13/8 kl. 19.00",
-        numberInStock: "13 / 8",
+        spotsOpen: "13 / 8",
         dailyRentalRate: "19.00",
       },
     ],
@@ -29,22 +29,22 @@ const data = [
     movies: [
       {
         title: "Parken 14/8 kl. 19.30",
-        numberInStock: "13 / 9",
+        spotsOpen: "13 / 9",
         dailyRentalRate: "18.00",
       },
       {
         title: "Parken 14/8 kl. 19.30",
-        numberInStock: "13 / 9",
+        spotsOpen: "13 / 9",
         dailyRentalRate: "18.00",
       },
       {
         title: "Parken 14/8 kl. 19.30",
-        numberInStock: "13 / 9",
+        spotsOpen: "13 / 9",
         dailyRentalRate: "18.00",
       },
       {
         title: "Parken 14/8 kl. 19.30",
-        numberInStock: "13 / 9",
+        spotsOpen: "13 / 9",
         dailyRentalRate: "18.00",
       },
     ],
@@ -54,22 +54,22 @@ const data = [
     movies: [
       {
         title: "Mosehuset 15/8 kl. 18.30",
-        numberInStock: "14 / 10",
+        spotsOpen: "14 / 10",
         dailyRentalRate: "17.30",
       },
       {
         title: "Mosehuset 15/8 kl. 18.30",
-        numberInStock: "14 / 10",
+        spotsOpen: "14 / 10",
         dailyRentalRate: "17.30",
       },
       {
         title: "Mosehuset 15/8 kl. 18.30",
-        numberInStock: "14 / 10",
+        spotsOpen: "14 / 10",
         dailyRentalRate: "17.30",
       },
       {
         title: "Mosehuset 15/8 kl. 18.30",
-        numberInStock: "14 / 10",
+        spotsOpen: "14 / 10",
         dailyRentalRate: "17.30",
       },
     ],
@@ -79,17 +79,17 @@ const data = [
     movies: [
       {
         title: "Party 16/8 kl. 18.00",
-        numberInStock: "15 / 10",
+        spotsOpen: "15 / 10",
         dailyRentalRate: "18.30",
       },
       {
         title: "Party 16/8 kl. 18.00",
-        numberInStock: "15 / 10",
+        spotsOpen: "15 / 10",
         dailyRentalRate: "18.30",
       },
       {
         title: "Party 16/8 kl. 18.00",
-        numberInStock: "15 / 10",
+        spotsOpen: "15 / 10",
         dailyRentalRate: "18.30",
       },
     ],
