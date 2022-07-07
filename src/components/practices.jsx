@@ -53,16 +53,16 @@ class Practices extends Component {
       sortColumn,
       selectedGenre,
       searchQuery,
-      practices: allMovies,
+      practices: allPactices,
     } = this.state;
 
-    let filtered = allMovies;
+    let filtered = allPactices;
     if (searchQuery)
-      filtered = allMovies.filter((m) =>
+      filtered = allPactices.filter((m) =>
         m.title.toLowerCase().startsWith(searchQuery.toLowerCase())
       );
     else if (selectedGenre && selectedGenre._id)
-      filtered = allMovies.filter(
+      filtered = allPactices.filter(
         (m) => m.discipline._id === selectedGenre._id
       );
 
