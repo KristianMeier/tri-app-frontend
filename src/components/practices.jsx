@@ -5,6 +5,7 @@ import { getDisciplines, getPractices } from "../services/apiService";
 import { paginate } from "./common/pagination";
 import _ from "lodash";
 import SearchBox from "./searchBox";
+import RadioInput from "./common/radioInput";
 
 class Practices extends Component {
   state = {
@@ -84,6 +85,8 @@ class Practices extends Component {
           <br />
           <h2 id="link-for-footer">Book a practice</h2>
           <SearchBox value={searchQuery} onChange={this.handleSearch} />
+
+          <RadioInput />
           <PracticesTable
             practices={practices}
             sortColumn={sortColumn}

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
 import Practices from "./components/practices";
-import MyBookings from "./components/myBookings";
+import MyAccount from "./components/myAccount";
 import NavBar from "./components/navBar";
 import Footer from "./components/footer";
 import AboutTheApp from "./components/aboutTheApp";
@@ -17,7 +17,7 @@ class App extends Component {
           <Switch>
             <Route path="/about-the-app" component={AboutTheApp} />
             <Route path="/practices" component={Practices} />
-            <Route path="/myBookings" component={MyBookings} />
+            <Route path="/myBookings" component={MyAccount} />
             <Redirect from="/" exact to="/about-the-app" />
             <Redirect to="/myBookings" />
           </Switch>

@@ -6,11 +6,24 @@
   margin: 5px;
 }
 
+#lessBottumMargin {
+  margin-bottom: 10px;
+}
+body {
+  cursor: pointer;
+}
+
 #pagination-icons {
   color: grey;
   background-color: white;
   border: 1px solid grey;
   cursor: pointer;
+}
+
+.radio {
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 15px;
 }
 
 #pagination-icons:active,

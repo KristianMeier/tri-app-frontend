@@ -2,32 +2,37 @@ import React from "react";
 
 const AboutTheApp = () => {
   return (
-    <div className="row">
-      <div className="col">
+    <div>
+      <br />
+      <br />
+      <br />
+      <h2>Adresses</h2>
+      <p>
+        <strong>Valby:</strong> The Adress 14, 1000 Valbu
+      </p>
+      <p>
+        <strong>Valby:</strong> The Adress 14, 1000 Valbu
+      </p>
+      <p>
+        <strong>Valby:</strong> The Adress 14, 1000 Valbu
+      </p>
+      <p>
+        <strong>Valby:</strong> The Adress 14, 1000 Valbu
+      </p>
+      <p>
+        <strong>Valby:</strong> The Adress 14, 1000 Valbu
+      </p>
+      <h2>Special notes</h2>
+      <p>
+        <strong>Valby:</strong> Meet at the entrace 10 minutes before practive.{" "}
         <br />
+        The entrance to the swimmingpool is found <br />
+        thru the main entrace, and 150meter to the right.
+      </p>
+      <p>
+        <strong>Open Water:</strong> Its is required to bring a swing boye
         <br />
-        <br />
-        <h2>About the App</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
-          voluptas itaque est, sed rerum ducimus commodi deleniti distinctio
-          dolorum eum unde natus excepturi labore asperiores magni a
-          reprehenderit eaque. Molestias? Consequuntur velit quidem optio
-          pariatur molestiae vero perferendis explicabo deserunt, repellat
-          expedita sit doloribus repellendus voluptatum, quam architecto, unde
-          error praesentium ducimus quasi? Libero dicta quis cum harum impedit
-          ducimus. Temporibus delectus facilis et harum laudantium cum molestiae
-          odio incidunt, commodi consectetur voluptatibus blanditiis sint odit
-          ducimus totam itaque sit necessitatibus pariatur! Temporibus earum hic
-          corporis voluptates facere nostrum ab. Officiis delectus ipsa quam ex
-          facere saepe quo, autem laboriosam, odit asperiores consectetur
-          similique illum veritatis suscipit eius beatae iusto earum cumque
-          minima. Delectus, nemo laborum! Ad ea placeat ex. Maxime odio delectus
-          sequi, asperiores illo quos animi fugit iste reprehenderit dolor autem
-          nobis quia minus adipisci vel perspiciatis ipsam at placeat ipsum
-          incidunt? Distinctio vero voluptatum sequi! Inventore, quaerat.
-        </p>
-      </div>
+      </p>
     </div>
   );
 };

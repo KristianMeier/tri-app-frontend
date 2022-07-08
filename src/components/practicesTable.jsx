@@ -25,8 +25,8 @@ class PracticesTable extends Component {
     },
     {
       key: "like",
-      label: "Sign up",
-      content: () => <Button text={"Sign Up"} />,
+      label: "Book",
+      content: () => <Button text={"Book"} />,
     },
   ];
 
