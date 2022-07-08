@@ -14,7 +14,8 @@
 }
 
 #pagination-icons:active,
-#pagination-icons:hover {
+#pagination-icons:hover,
+#pagination-icons:focus {
   background-color: grey;
   color: white;
 }

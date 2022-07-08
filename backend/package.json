@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "seed": "node seed.js",
-    "test": "jest --watchAll --verbose"
+    "seed": "node seed.js"
   },
   "keywords": [],
   "author": "",
@@ -19,9 +18,5 @@
     "mongoose": "^5.0.2",
     "winston": "^2.4.0",
     "winston-mongodb": "^3.0.0"
-  },
-  "devDependencies": {
-    "jest": "^22.2.2",
-    "supertest": "^3.0.0"
   }
 }
