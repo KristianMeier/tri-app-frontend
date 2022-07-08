@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { genreSchema } = require("./disciplineModel");
+const { disciplineSchema } = require("./disciplineModel");
 
 const Practices = mongoose.model(
   "movies",
@@ -12,7 +12,7 @@ const Practices = mongoose.model(
       maxlength: 255,
     },
     discipline: {
-      type: genreSchema,
+      type: disciplineSchema,
       required: true,
     },
     spotsOpen: {

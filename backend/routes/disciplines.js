@@ -1,4 +1,4 @@
-const { Disciplines } = require("../models/disciplineModel");
+const { Disciplines } = require("../models/discipline");
 const express = require("express");
 const router = express.Router();
 

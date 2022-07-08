@@ -106,8 +106,8 @@ async function seed() {
     const { _id: disciplinId } = await new Disciplines({
       name: discipline.name,
     }).save();
-    const practices = discipline.practices.map((movie) => ({
-      ...movie,
+    const practices = discipline.practices.map((practice) => ({
+      ...practice,
       discipline: { _id: disciplinId, name: discipline.name },
     }));
     await Practices.insertMany(practices);
