@@ -1,4 +1,3 @@
-const Joi = require("joi");
 const mongoose = require("mongoose");
 const { genreSchema } = require("./genre");
 
@@ -31,16 +30,4 @@ const Practices = mongoose.model(
   })
 );
 
-function validatePractices(movie) {
-  const schema = {
-    practices: Joi.string().min(5).max(50).required(),
-    disciplinId: Joi.objectId().required(),
-    spotsOpen: Joi.string().min(0).required(),
-    hasSigned: Joi.string().min(0).required(),
-  };
-
-  return Joi.validate(movie, schema);
-}
-
 exports.Practices = Practices;
-exports.validate = validatePractices;
