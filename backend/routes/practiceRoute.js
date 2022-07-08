@@ -1,4 +1,4 @@
-const { Practices } = require("../models/movie");
+const { Practices } = require("../models/movieModel");
 const express = require("express");
 const router = express.Router();
 

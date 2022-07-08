@@ -1,5 +1,5 @@
-const { Disciplines } = require("./models/genre");
-const { Practices } = require("./models/movie");
+const { Disciplines } = require("./models/disciplineModel");
+const { Practices } = require("./models/movieModel");
 const mongoose = require("mongoose");
 const config = require("config");
 

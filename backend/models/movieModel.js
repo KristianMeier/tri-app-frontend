@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { genreSchema } = require("./genre");
+const { genreSchema } = require("./disciplineModel");
 
 const Practices = mongoose.model(
   "movies",

@@ -1,6 +1,6 @@
 const express = require("express");
-const genres = require("../routes/genres");
-const practices = require("../routes/practices");
+const genres = require("../routes/disciplineRoute");
+const practices = require("../routes/practiceRoute");
 
 module.exports = function (app) {
   app.use(express.json());
