@@ -20,7 +20,7 @@ const RadioInput = () => {
           name="disc"
         />{" "}
         Running
-        <input className="radio" type="radio" value="Event" name="disc" /> Event
+        <input className="radio" type="radio" value="Event" name="disc" /> All
       </div>
       <div>
         <input className="radio" type="radio" value="Booked" name="isBooked" />{" "}
