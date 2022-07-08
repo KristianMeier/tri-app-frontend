@@ -1,5 +1,5 @@
 const express = require("express");
-const disciplines = require("../routes/disciplineRoute");
+const disciplines = require("../routes/practiceRoute");
 const practices = require("../routes/practiceRoute");
 
 module.exports = function (app) {

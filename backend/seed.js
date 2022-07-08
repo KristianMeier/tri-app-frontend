@@ -1,4 +1,4 @@
-const { Practices, Disciplines } = require("./models/practiceModel");
+const { Practices, Disciplines } = require("./models/apiModel");
 const mongoose = require("mongoose");
 const config = require("config");
 
