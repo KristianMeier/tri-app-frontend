@@ -6,7 +6,7 @@ const config = require("config");
 const data = [
   {
     name: "Swimming",
-    movies: [
+    practices: [
       {
         practices: "Valby 13/8 kl. 19.00",
         spotsOpen: "13 / 8",
@@ -26,7 +26,7 @@ const data = [
   },
   {
     name: "Running",
-    movies: [
+    practices: [
       {
         practices: "Parken 14/8 kl. 19.30",
         spotsOpen: "13 / 9",
@@ -51,7 +51,7 @@ const data = [
   },
   {
     name: "Cycling",
-    movies: [
+    practices: [
       {
         practices: "Mosehuset 15/8 kl. 18.30",
         spotsOpen: "14 / 10",
@@ -76,7 +76,7 @@ const data = [
   },
   {
     name: "Events",
-    movies: [
+    practices: [
       {
         practices: "Party 16/8 kl. 18.00",
         spotsOpen: "15 / 10",
@@ -106,11 +106,11 @@ async function seed() {
     const { _id: disciplinId } = await new Disciplines({
       name: discipline.name,
     }).save();
-    const movies = discipline.movies.map((movie) => ({
+    const practices = discipline.practices.map((movie) => ({
       ...movie,
       discipline: { _id: disciplinId, name: discipline.name },
     }));
-    await Practices.insertMany(movies);
+    await Practices.insertMany(practices);
   }
 
   mongoose.disconnect();
