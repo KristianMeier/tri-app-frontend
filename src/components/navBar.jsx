@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const NavBar = ({ user }) => {
+const NavBar = () => {
   return (
     <div class="w3-top">
       <div class="w3-row w3-large w3-light-grey">
