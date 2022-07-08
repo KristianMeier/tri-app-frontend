@@ -29,14 +29,6 @@ class Practices extends Component {
     this.setState({ currentPage: page });
   };
 
-  handleDisciplinesSelect = (discipline) => {
-    this.setState({
-      selectedDisciplines: discipline,
-      searchQuery: "",
-      currentPage: 1,
-    });
-  };
-
   handleSearch = (query) => {
     this.setState({
       searchQuery: query,
