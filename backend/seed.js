@@ -1,5 +1,5 @@
 const { Disciplines } = require("./models/disciplineModel");
-const { Practices } = require("./models/movieModel");
+const { Practices } = require("./models/practiceModel");
 const mongoose = require("mongoose");
 const config = require("config");
 
