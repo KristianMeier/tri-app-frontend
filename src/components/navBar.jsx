@@ -12,7 +12,7 @@ const NavBar = ({ user }) => {
         </div>
         <div class="w3-col s4">
           <NavLink className="w3-button w3-block" to="/practices">
-            Book
+            Book Practice
           </NavLink>
         </div>
         <div className="w3-col s4">

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 
 class Form extends Component {
   state = {
@@ -11,14 +11,6 @@ class Form extends Component {
 
     this.setState({ data });
   };
-
-  renderButton(label) {
-    return (
-      <button id="pagination-icons" className="btn btn-primary">
-        {label}
-      </button>
-    );
-  }
 }
 
 export default Form;
