@@ -8,8 +8,6 @@ const Practices = mongoose.model(
       type: String,
       required: true,
       trim: true,
-      minlength: 5,
-      maxlength: 255,
     },
     discipline: {
       type: disciplineSchema,
@@ -18,14 +16,10 @@ const Practices = mongoose.model(
     spotsOpen: {
       type: String,
       required: true,
-      min: 0,
-      max: 255,
     },
     hasSigned: {
       type: String,
       required: true,
-      min: 0,
-      max: 255,
     },
   })
 );

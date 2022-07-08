@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import PracticesTable from "./practicesTable";
 import Pagination from "./common/pagination";
-import { getPractices } from "../services/practiceService";
-import { getDisciplines } from "../services/disciplineService";
+import { getDisciplines, getPractices } from "../services/apiService";
 import { paginate } from "./common/pagination";
 import _ from "lodash";
 import SearchBox from "./searchBox";
