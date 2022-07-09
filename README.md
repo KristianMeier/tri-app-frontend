@@ -1,20 +1,15 @@
-## Forsiden
+## Frontend
 
-1. npm i
-2. npm start
+1. docker compose up -d
+2. fuldt rebuild (docker compose up -d --build)
 
-# Lokalt connect
+# Deploy
 
-"http://localhost:3001/api"
+1. EC2 -> Ubuntu -> Docker -> Docker Dompose
+1. git pull
+1. docker compose up -d --build
 
-## Sådan for man sine filer i container synced med mine host filer
-
-## Diverse info
-
-Man skal være i mappen med docker-compose.yml for at lører docker compose up
-Docker-compose er lavet til docker compose
-
-## Parametere i docker comper
+## Parametere i docker compose
 
 -d det betyder detacher: man kan kører videre uden at være "inde i den", altså man kan bruge command promt
 --build den bygger det hele forfra, den kommer ikke noget cache. Det er godt at gøre hvis man har lavet ændringer
