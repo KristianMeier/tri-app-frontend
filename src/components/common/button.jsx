@@ -5,7 +5,7 @@ const Button = ({ text }) => {
     <button
       type="button"
       id="pagination-icons"
-      class="btn btn-outline-secondary btn-sm"
+      className="btn btn-outline-secondary btn-sm"
       style={{ cursor: "pointer" }}
     >
       {text}
