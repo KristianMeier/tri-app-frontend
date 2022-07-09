@@ -1,7 +1,5 @@
 FROM node:14.16.0-alpine3.13
 
-# Er det nødvendigt at lave user til migselv?
-# Hvor er formålet med dette?
 RUN addgroup app && adduser -S -G app app
 USER app
 
