@@ -12,7 +12,7 @@ class Practices extends Component {
     practices: [],
     disciplines: [],
     currentPage: 1,
-    pageSize: 20,
+    pageSize: 10,
     searchQuery: "",
     selectedDisciplines: null,
     sortColumn: { path: "practices", order: "asc" },

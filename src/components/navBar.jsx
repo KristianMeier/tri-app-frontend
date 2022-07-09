@@ -16,7 +16,7 @@ const NavBar = () => {
           </NavLink>
         </div>
         <div className="w3-col s4">
-          <NavLink className="w3-button w3-block" to="/myBookings">
+          <NavLink className="w3-button w3-block" to="/myAccount">
             Account
           </NavLink>
         </div>
