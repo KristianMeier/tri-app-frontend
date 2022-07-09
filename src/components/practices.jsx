@@ -83,7 +83,7 @@ class Practices extends Component {
           <br />
           <br />
           <br />
-          <h2 id="link-for-footer">Book a practice</h2>
+          <h2 id="link-for-footer">Book a practice - wow</h2>
           <SearchBox value={searchQuery} onChange={this.handleSearch} />
 
           <RadioInput />

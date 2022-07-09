@@ -3,6 +3,10 @@
 1. npm i
 2. npm start
 
+# Lokalt connect
+
+"http://localhost:3001/api"
+
 ## Sådan for man sine filer i container synced med mine host filer
 
 ## Diverse info
