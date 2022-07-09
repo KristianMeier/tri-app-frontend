@@ -6,6 +6,8 @@
 3. node seed.js
 4. node index.js
 
+mongodb+srv://vidlyuser:1234@cluster0.3n5wy.mongodb.net/?retryWrites=true&w=majority
+
 ## Forsiden
 
 1. npm i
