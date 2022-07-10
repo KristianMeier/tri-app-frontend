@@ -3,7 +3,7 @@ import TableHeader from "./tableHeader";
 import TableBody from "./tableBody";
 
 const Table = ({ columns, sortColumn, onSort, data }) => {
-  if (data.length == 0) {
+  if (data.length === 0) {
     return <h3>No data</h3>;
   }
 
